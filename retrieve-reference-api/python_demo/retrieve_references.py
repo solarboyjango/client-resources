@@ -1,9 +1,3 @@
-"""
-Author: Shawn
-Date: 2025-07-25 21:41:25
-LastEditTime: 2025-07-25 22:23:43
-"""
-
 #!/usr/bin/env python3
 """
 檢索聊天記錄參考文獻 API 範例
@@ -41,12 +35,8 @@ def main():
         print("成功!")
         print(json.dumps(result, ensure_ascii=False, indent=2))
 
-        # 保存結果
-        with open("data/response.json", "w", encoding="utf-8") as f:
-            json.dump(result, f, ensure_ascii=False, indent=2)
-        print("結果已保存到 data/response.json")
     else:
-        print("檢索失敗")
+        print("失敗!")
 
 
 if __name__ == "__main__":
